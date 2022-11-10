@@ -7,7 +7,7 @@ arXiv: https://arxiv.org/abs/2211.04031
 
 # Too long; didn't read
 If you are only interested in the implementation of Hilbert Distillation method, please refer to the method 
-hilbert_distillation in ```tils\kd_loss.py``` (line 55-77). Feel free to transplant them to your own projects.
+hilbert_distillation in ```utils\kd_loss.py``` (line 55-77). Feel free to transplant them to your own projects.
 
 If you are also interested in the experiment environments of this paper, please check the following information.
 # Run Book
