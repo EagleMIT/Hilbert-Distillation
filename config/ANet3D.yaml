@@ -1,0 +1,34 @@
+model: 'resnet'
+Dimension: 3
+model_depth: 50
+resnet_shortcut: 'B'
+sample_size:
+  -
+    256
+  -
+    320
+sample_duration: 16
+pretrain_path: '/data/backbone/kinetics_resnet_50_RGB_16_best.pth'
+DATASET: 'ActivityNet'
+EPOCHS: 40
+Batch_Size: 16
+LR: 0.005
+kd: False
+dampening: 0.9
+momentum: 0.9
+weight_decay: 0.001
+nesterov: False
+lr_patience: 10
+n_classes: 600
+n_finetune_classes: 100
+ft_portion: 'last_layer'
+no_cuda: False
+pretrain: True
+LOG_SAVE_DIR: 'log'
+MODEL_SAVE_DIR: '/checkpoints'
+initial_scale: 1.0
+mean: [114.7748, 107.7354, 99.475]
+std: [38.7568578, 37.88248729, 40.02898126]
+norm_value: 1
+downsample: 1
+n_val_samples: 3

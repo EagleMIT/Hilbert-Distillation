@@ -1,0 +1,17 @@
+model: 'resnet'
+sample_duration: 8
+DATASET: 'covid'
+EPOCHS: 50
+Batch_Size: 32
+LR: 0.001
+kd: True
+step: 4
+test_step: 4
+n_classes: 3
+LOG_SAVE_DIR: 'log'
+MODEL_SAVE_DIR: '/checkpoints'
+initial_scale: 1.0
+norm_value: 1
+downsample: 1
+alpha: 0.1
+discription: 'kd'
